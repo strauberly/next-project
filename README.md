@@ -6,6 +6,16 @@
 
 ---
 
+-- 6 Dec 2022 --
+
+- Revalidation of 10 seconds set as placeholder for incremental static generation so that changes are fetched for user who has loaded meetups.
+
+- Discussion on getServerSideProps() usage vs getStaticProps() usage in our application. GetStaticProps() remains in place with getServerSideProps() example in place.
+
+-Implementation of static paths. Values for paths currently hardcoded as placeholders, array of potential endpoints to be created dynamically once backend is implemented with db.
+
+---
+
 -- 5 Dec 2022 --
 
 - Generic form of site created. Values are hard coded place holders.
