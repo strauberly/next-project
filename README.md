@@ -18,6 +18,12 @@
 
 - A new meetup can be created and is stored in MongoDB Atlas.
 
+- All meetups on main page now fed from MongoDB backend. Updates appropriately if new meetup created.
+
+- Details fed for each meet up from MongoDB backend.
+
+- Added meta data in head for seo benefits.
+
 ---
 
 -- 5 Dec 2022 --
