@@ -12,4 +12,40 @@ const MeetupDetails = () => {
   );
 };
 
+// dynmically build array of values
+
+export const getStaticPaths = async () => {
+  return {
+    fallback: false,
+    paths: [
+      {
+        params: {
+          meetupId: "m1",
+        },
+      },
+      {
+        params: {
+          meetupId: "m2",
+        },
+      },
+    ],
+  };
+};
+
+export const getStaticProps = async (context) => {
+  const meetupId = context.params.meetupId;
+  return {
+    props: {
+      meetupData: {
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Shop-window_in_Regensburg.jpg/220px-Shop-window_in_Regensburg.jpg",
+        id: meetupId,
+        title: "First Meetup",
+        address: "some address",
+        description: "this is the first meetup",
+      },
+    },
+  };
+};
+
 export default MeetupDetails;
