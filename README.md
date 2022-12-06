@@ -12,7 +12,11 @@
 
 - Discussion on getServerSideProps() usage vs getStaticProps() usage in our application. GetStaticProps() remains in place with getServerSideProps() example in place.
 
--Implementation of static paths. Values for paths currently hardcoded as placeholders, array of potential endpoints to be created dynamically once backend is implemented with db.
+- Implementation of static paths. Values for paths currently hardcoded as placeholders, array of potential endpoints to be created dynamically once backend is implemented with db.
+
+- Begin api setup with post request.
+
+- A new meetup can be created and is stored in MongoDB Atlas.
 
 ---
 
